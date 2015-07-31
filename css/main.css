@@ -18,9 +18,11 @@ h1 {padding-bottom: 0.25em;}
 .quote:before {content: open-quote;display:inline-block;}
 .quote:after {content: close-quote;display:inline-block;}
 .quote p {display:inline;}
-.navbar-inverse .navbar-nav .pull-left a, .navbar-inverse .navbar-nav>.active>a {color:#F6C905; background-color:inherit;font-weight:600;}
+.social a {color:#9d9d9d;}
+.social a:hover {color:white;}
+.navbar-inverse .navbar-nav .logo a, .navbar-inverse .navbar-nav>.active>a {color:#F6C905; background-color:inherit;font-weight:600;}
 .navbar-inverse .navbar-nav li {height:40px; margin: 0px 20px;}
-.navbar-inverse .navbar-nav li a {height:40px;padding:15px 0px;}
+.navbar-inverse .navbar-nav li a, .social li i {height:40px;padding:15px 0px;}
 .navbar-inverse .navbar-nav>.active>a:hover {background-color:inherit;}
 .navbar-inverse .navbar-nav li.middle:hover {background-color:inherit; border-bottom: 2px solid white;}
 .navbar {margin-bottom:0;}
