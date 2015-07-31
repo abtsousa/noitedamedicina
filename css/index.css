@@ -19,12 +19,14 @@ html, body {background-color: #333; background:linear-gradient(rgba(0,0,0,0.3),r
 
 /*CSS próprio */
 .cover {padding-top:100px;} /*Temp*/
-.redes .container {margin-left:auto;margin-right: auto;margin-top:40px;}
-.redes ul {padding-left:0; padding-top:10px;}
-.redes li {display:inline-block;padding:0 30px;}
 
 .cover h1, .masthead-brand, .redes h3 {font-family:"Open Sans",sans-serif;}
 .cover h1 {font-size:32pt;font-weight:600;}
 .cover p {font-size:18pt;}
 .redes h3 {font-size:24pt;}
+.redes .container {margin-left:auto;margin-right: auto;margin-top:40px;}
+.redes ul {padding-left:0px; padding-top:10px;}
+.redes li {display:inline-block; padding: 0px 30px;}
+.redes li a:hover {color:rgba(255,255,255,.75);}
 .redes p {font-size:12pt;}
+.btn:hover {background-color:rgba(255,255,255,.75);}
