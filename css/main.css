@@ -13,7 +13,7 @@ html,body {font-family:"Source Sans Pro",sans-serif;text-align: center;}
 h1, h3, .navbar-inverse .navbar-nav .logo a {font-family:"Open Sans",sans-serif;font-weight:600;}
 h1 {padding-bottom: 0.25em;}
 .content p {text-align: left; font-size:14pt; padding-top: 0.25em; padding-bottom:0.25em;}
-.quote {font-size:16pt; font-family:"Bree Serif",serif;text-align:center; quotes: "«" "»";background:#eee;padding:1em; margin: 0.5em auto; float:none;display: inline-block;}
+.quote {font-size:16pt; font-family:'Bree Serif',serif;text-align:center; quotes: "«" "»";background:#eee;padding:1em; margin: 0.5em auto; float:none;display: inline-block;}
 .navbar-inverse {font-size:12pt;}
 .quote:before {content: open-quote;display:inline-block;}
 .quote:after {content: close-quote;display:inline-block;}
