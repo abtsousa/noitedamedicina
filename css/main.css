@@ -10,6 +10,7 @@ body {
     padding-top: 70px;
 }
 html,body {font-family:"Source Sans Pro",sans-serif;text-align: center;}
+img {max-width:100%;}
 h1, h3, .navbar-inverse .navbar-nav .logo a {font-family:"Open Sans",sans-serif;font-weight:600;}
 h1 {padding-bottom: 0.25em;}
 .content p {text-align: left; font-size:14pt; padding-top: 0.25em; padding-bottom:0.25em;}
