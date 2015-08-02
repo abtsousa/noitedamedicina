@@ -9,7 +9,11 @@
     width: 80%;
   }
 }
-
+.hide-text, .logo {
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+}
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {color:white; border-bottom-color:white;}
 
@@ -30,3 +34,9 @@ html, body {background-color: #333; background:linear-gradient(rgba(0,0,0,0.3),r
 .redes li a:hover {color:rgba(255,255,255,.75);}
 .redes p {font-size:12pt;}
 .btn:hover {background-color:rgba(255,255,255,.75);}
+
+.logo {background:url(../banner-m.png); width:175px; height:50px;display:inline-block;float:left;}
+
+@media (min-width: 500px) {
+    .logo {background:url(../banner-a.png); width:357px; height:50px;}
+}
