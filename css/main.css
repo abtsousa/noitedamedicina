@@ -21,7 +21,7 @@ h1 {padding-bottom: 0.25em;}
 .quote p {display:inline;}
 .social a {color:#9d9d9d; vertical-align:center;}
 .social a:hover {color:white;}
-.navbar-inverse .navbar-nav .logo a, .navbar-inverse .navbar-nav>.active>a {color:#FED222; background-color:inherit;font-weight:600;}
+.navbar-inverse .navbar-nav>.active>a {color:#FED222; background-color:inherit;font-weight:600;}
 .navbar-inverse {padding:0 15px;}
 .navbar-inverse .navbar-nav li {height:40px; margin: 0px 20px;}
 .navbar-inverse .navbar-nav li a {height:40px;padding:15px 0px;}
@@ -50,6 +50,7 @@ h1 {padding-bottom: 0.25em;}
 
 
 .navbar .logo {background:url(../banner-a.png); width:357px; height:50px;}
+.navbar .navbar-toggle.logo {background:url(../banner-m.png); width:175px; height:50px; border:0; margin:0;padding:0;}
 .navbar-nav li {
       float: none;
       display: inline-block;
