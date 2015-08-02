@@ -10,7 +10,7 @@
   }
     
 }
-@media (min-width: 1167px) {
+@media (min-width: 1200px) {
   .masthead,
   .mastfoot,
   .cover-container,
@@ -33,9 +33,9 @@ html, body {background-color: #333; background:linear-gradient(rgba(0,0,0,0.3),r
 
 /*CSS próprio */
 .hide-text, .logo {
-text-indent: 100%;
-white-space: nowrap;
-overflow: hidden;
+    text-indent: -9000em;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .cover:before {
@@ -47,7 +47,7 @@ overflow: hidden;
 .cover h1, .masthead-brand, .redes h3 {font-family:"Open Sans",sans-serif;}
 .cover h1 {font-size:2.8em;font-weight:600;}
 .cover p {font-size:2em;}
-.masthead-nav li a {font-size:1.1em;}
+.masthead-nav li a {font-size:1.2em;}
 .redes .container {margin-left:auto;margin-right: auto;margin-top:40px;}
 .redes ul {padding-left:0px; padding-top:10px;}
 .redes li {display:inline-block; padding: 0px 30px;}
