@@ -30,7 +30,7 @@
 
 .icon-bar {background-color: #ffffff;}
 
-html, body {background-color: #333; background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../temp3.jpg"); background-size:cover; background-position: center center; background-repeat:no-repeat; background-attachment: fixed; font-family:"Source Sans Pro",sans-serif;} /*text-shadow: 2px 2px 3px rgba(0,0,0,.5);*/
+html, body {background-color: #333; background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../bg/12-a.png"); background-size:cover; background-position: center center; background-repeat:no-repeat; background-attachment: fixed; font-family:"Source Sans Pro",sans-serif;} /*text-shadow: 2px 2px 3px rgba(0,0,0,.5);*/
 
 /*CSS próprio */
 .hide-text, .logo {
@@ -69,5 +69,6 @@ html, body {background-color: #333; background:linear-gradient(rgba(0,0,0,0.3),r
 .redes li#snapchat {background-color:#000000;}
 .fa-snapchat {color: #fffc00;}
 .redes li a:hover {color:rgba(255,255,255,.75);}
+.fa-snapchat:hover {color:rgba(255,252,0,.75);}
 .redes p {font-size:1em;}
 .btn:hover {background-color:rgba(255,255,255,.75);}
