@@ -6,6 +6,18 @@
 F0BA04
 F6C905 */
 
+/* Fix Google Maps canvas
+ *
+ * Wrap your Google Maps embed in a `.google-map-canvas` to reset Bootstrap's
+ * global `box-sizing` changes. You may optionally need to reset the `max-width`
+ * on images in case you've applied that anywhere else. (That shouldn't be as
+ * necessary with Bootstrap 3 though as that behavior is relegated to the
+ * `.img-responsive` class.)
+ */
+
+.google-map-canvas,
+.google-map-canvas * { .box-sizing(content-box); }
+
 body {
     padding-top: 70px;
 }
@@ -15,9 +27,11 @@ html,body {font-family:"Source Sans Pro",sans-serif;text-align: center;}
     white-space: nowrap;
     overflow: hidden;
 }
-img {max-width:100%;}
+img {max-width:80vw; max-height: 80vh;}
 h1, h3, .navbar-inverse .navbar-nav .logo a {font-family:"Open Sans",sans-serif;font-weight:600;}
 h1 {padding-bottom: 0.25em;}
+.line {width:100%; text-align: center; border-bottom: 2px solid #000; line-height: 0.1em; margin-bottom:1em; font-variant: small-caps;}
+.line span {background:#fff; padding: 0 0.5em;}
 .content p {text-align: left; font-size:1.3em; padding-top: 0.25em; padding-bottom:0.25em;}
 .quote {font-size:1.2em; font-family:'Bree Serif',serif;text-align:center; quotes: "«" "»";background:#eee;padding:1em; margin: 0.5em auto; float:none;display: inline-block;}
 .navbar-inverse {font-size:1.1em;}

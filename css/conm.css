@@ -1,2 +1,4 @@
 .jumbotron {position:relative;background-image: url(../conm/conm.jpg); background-size:cover; background-position: center 75%; background-repeat:no-repeat; background-attachment: local; color:#fff; text-shadow: 2px 2px 3px rgba(0,0,0,.5);}
-.fa-external-link {position:relative; top:0%;}
+.fa-external-link {position:absolute; top:10px; right:10%; color:white;}
+.caption p {text-align: center;}
+.col-lg-3 {margin-top:0.5em; margin-bottom:0.5em;}
