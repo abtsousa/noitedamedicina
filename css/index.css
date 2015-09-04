@@ -4,8 +4,8 @@
 @media (min-width: 992px) {
   .masthead,
   .mastfoot,
-  .cover-container,
-  .redes .container {
+  .cover-container
+  {
     width: 90%;
   }
     
@@ -13,8 +13,8 @@
 @media (min-width: 1200px) {
   .masthead,
   .mastfoot,
-  .cover-container,
-  .redes .container {
+  .cover-container
+  {
     width: 80%;
   }
 }
@@ -22,6 +22,7 @@
 .navbar-collapse {clear:both;}
 @media (min-width: 768px) {
     .navbar-collapse {clear:none;}
+    .redes .container#left {display:inline-block !important;}
 }
 
 .masthead-nav > li > a:hover,
@@ -29,7 +30,7 @@
 
 .icon-bar {background-color: #ffffff;}
 
-html, body {background-color: #333; background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../temp3.jpg"); background-size:cover; background-position: center center; background-repeat:no-repeat; background-attachment: fixed; font-family:"Source Sans Pro",sans-serif; text-shadow: 2px 2px 3px rgba(0,0,0,.5);}
+html, body {background-color: #333; background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../temp3.jpg"); background-size:cover; background-position: center center; background-repeat:no-repeat; background-attachment: fixed; font-family:"Source Sans Pro",sans-serif;} /*text-shadow: 2px 2px 3px rgba(0,0,0,.5);*/
 
 /*CSS próprio */
 .hide-text, .logo {
@@ -48,15 +49,25 @@ html, body {background-color: #333; background:linear-gradient(rgba(0,0,0,0.3),r
 .cover h1 {font-size:2.8em;font-weight:600;}
 .cover p {font-size:2em;}
 .masthead-nav li a {font-size:1.2em;}
-.redes .container {margin-left:auto;margin-right: auto;margin-top:40px;}
-.redes ul {padding-left:0px; padding-top:10px;}
-.redes li {display:inline-block; padding: 0px 30px;}
-.redes li a:hover {color:rgba(255,255,255,.75);}
-.redes p {font-size:1em;}
-.btn:hover {background-color:rgba(255,255,255,.75);}
+
+.cover-heading strong {color:#FED222;}
 
 .logo {background:url(../banner-m.png); background-size:contain; width:175px; height:50px;display:inline-block;float:left;}
 
 @media (min-width: 500px) {
     .logo {background:url(../banner-a.png); background-size:100%;width:37.5vw;height:5vw;background-repeat:no-repeat;min-height:50px;min-width:375px; max-width:750px}
 }
+.redes .container#left {display:none;float:left; padding:0; margin:auto; text-align: left; width: auto; height:5em;}
+.redes .container#right {display:inline-block;float:right; padding:0; margin:auto; text-align: right; width: auto; height:5em;}
+.redes .container#left > p {display:inline-block;line-height:5em;vertical-align:middle;}
+.redes .container#right ul {display:inline-table;vertical-align:middle;border-spacing:10px;padding-left:0;}
+.redes .container#right > p {display:inline-block;}
+.redes li {display:table-cell; vertical-align:middle; text-align: center;text-shadow:none; width:3.25em; height:3em; padding-top:0.5em; border-radius:50%;}
+.redes li#facebook {background-color:#3b5998;}
+.redes li#instagram {background-color:#125688;}
+.redes li#youtube {background-color:#bb0000;}
+.redes li#snapchat {background-color:#000000;}
+.fa-snapchat {color: #fffc00;}
+.redes li a:hover {color:rgba(255,255,255,.75);}
+.redes p {font-size:1em;}
+.btn:hover {background-color:rgba(255,255,255,.75);}
