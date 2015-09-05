@@ -30,8 +30,25 @@ html,body {font-family:"Source Sans Pro",sans-serif;text-align: center;}
 img {max-width:80vw; max-height: 80vh;}
 h1, h3, .navbar-inverse .navbar-nav .logo a {font-family:"Open Sans",sans-serif;font-weight:600;}
 h1 {padding-bottom: 0.25em;}
-.line {width:100%; text-align: center; border-bottom: 2px solid #000; line-height: 0.1em; margin-bottom:1em; font-variant: small-caps;}
-.line span {background:#fff; padding: 0 0.5em;}
+.line {overflow:hidden; text-align:center; margin-bottom:1em; font-variant: small-caps;}
+.line:before,
+.line:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.line:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.line:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
 .content p {text-align: left; font-size:1.3em; padding-top: 0.25em; padding-bottom:0.25em;}
 .quote {font-size:1.2em; font-family:'Bree Serif',serif;text-align:center; quotes: "«" "»";background:#eee;padding:1em; margin: 0.5em auto; float:none;display: inline-block;}
 .navbar-inverse {font-size:1.1em;}
