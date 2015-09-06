@@ -66,9 +66,15 @@ html, body {background-color: #333; background:linear-gradient(rgba(0,0,0,0.3),r
 .redes li#facebook {background-color:#3b5998;}
 .redes li#instagram {background-color:#125688;}
 .redes li#youtube {background-color:#bb0000;}
-.redes li#snapchat {background-color:#000000;}
-.fa-snapchat {color: #fffc00;}
+.redes li#snapchat {background-color:#fffc00;}
+.fa-snapchat {text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000;
+}
 .redes li a:hover {color:rgba(255,255,255,.75);}
-.fa-snapchat:hover {color:rgba(255,252,0,.75);}
 .redes p {font-size:1em;}
 .btn:hover {background-color:rgba(255,255,255,.75);}
