@@ -29,7 +29,7 @@ html,body {font-family:"Source Sans Pro",sans-serif;text-align: center;}
     overflow: hidden;
 }
 img {max-width:80vw; max-height: 80vh;}
-h1, h3, .navbar-inverse .navbar-nav .logo a {font-family:"Open Sans",sans-serif;font-weight:600;}
+h1, h2, h3, h4, .navbar-inverse .navbar-nav .logo a {font-family:"Open Sans",sans-serif;font-weight:600;}
 h1 {padding-bottom: 0.25em;}
 .line {overflow:hidden; text-align:center; margin-bottom:1em; font-variant: small-caps;}
 .line:before,
@@ -105,3 +105,8 @@ blockquote p {display:inline;}
       display: inline-block;
     }
 }
+
+.patrocinios {display:inline-block; vertical-align: middle; float:none;}
+.patrocinios img {padding:10px; display:inline-block; margin:auto;}
+.patrocinios img.small {padding:10px; max-height:150px; display:inline-block; margin:auto;}
+h5 {margin-top:-20px;}
