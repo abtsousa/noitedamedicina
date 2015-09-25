@@ -109,5 +109,5 @@ blockquote p {display:inline;}
 .patrocinios {display:inline-block; vertical-align: middle; text-align: center; float:none;}
 .patrocinios p {text-align: center;}
 .patrocinios img {padding:10px; display:inline-block; margin:auto;}
-.patrocinios img.small {padding:10px; max-height:150px; display:inline-block; margin:auto;}
+.patrocinios img.small {padding:10px; max-height:150px; max-width:300px; display:inline-block; margin:auto;}
 h5 {margin-top:-20px;}
