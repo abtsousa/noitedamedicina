@@ -53,7 +53,7 @@ h1 {padding-bottom: 0.25em;}
 .content p {text-align: left; font-size:1.3em; margin-top: 10px; margin-bottom:10px;}
 .lead {background: #eee;font-family:'Bree Serif',serif; font-size:1.05em; margin-bottom:0;}
 
-.thumbnail {position:relative;margin-bottom:0;}
+.thumbnail {display:inline-block;position:relative;margin-bottom:0;}
 .thumbnail img {max-height:40vh;}
 .fullimage {position:absolute; top:5%; right:5%; color:white; text-shadow: 2px 2px 3px rgba(0,0,0,1);}
 .fullimage .fa-external-link {padding-left:5px;}
@@ -111,3 +111,5 @@ blockquote p {display:inline;}
 .patrocinios img {padding:10px; display:inline-block; margin:auto;}
 .patrocinios img.small {padding:10px; max-height:150px; max-width:300px; display:inline-block; margin:auto;}
 h5 {margin-top:-20px;}
+
+.block {display:block;}
