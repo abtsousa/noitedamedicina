@@ -55,7 +55,7 @@ h1 {padding-bottom: 0.25em;}
 
 .thumbnail {display:inline-block;position:relative;margin-bottom:0;}
 .thumbnail img {max-height:40vh;}
-.fullimage {position:absolute; top:5%; right:5%; color:white; text-shadow: 2px 2px 3px rgba(0,0,0,1);}
+.fullimage {position:absolute; bottom:5%; right:5%; color:white; text-shadow: 2px 2px 3px rgba(0,0,0,1);}
 .fullimage .fa-external-link {padding-left:5px;}
 
 blockquote {font-size:1.2em; font-family:'Bree Serif',serif;text-align:center; quotes: "«" "»";background:#eee;padding:1em; margin: 0.5em auto; float:none;display: inline-block;}
