@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,6 +21,8 @@
         <!--<link href="css/bootstrap-theme.min.css" rel="stylesheet">-->
         <!-- Cover theme -->
         <link href="css/cover.css" rel="stylesheet">
+        <!--Flipclock -->
+        <link rel="stylesheet" href="/css/flipclock.css">
         <!-- CSS próprio-->
         <link href="css/index.css" rel=stylesheet>
         <!-- Facebook -->
@@ -34,6 +35,15 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>        
+        <!--Flipclock-->
+		<script src="/js/flipclock.min.js"></script>
+        <!--Countdown-->
+        <script src="/js/jquery.countdown.min.js"></script>
     </head>
     <body>
         <div class="site-wrapper">
@@ -67,7 +77,50 @@
                         </div>
                     </div>
                     <div class="inner cover">
-                        <h1 class="cover-heading">Esta é a <strong>tua</strong> Noite da Medicina.</h1>
+                        <h1 class="cover-heading">Faltam <div id="countdown"></div></h1>
+                        <script type="text/javascript">
+                            $("#countdown")
+                            .countdown("2015/11/04 21:00:00", function(event) {
+                            $(this).text(
+                            event.strftime('%D dias, %H horas, %M e %S segundos')
+                            );
+                            });
+                        </script>
+                        <div class=flipclock>
+                        <div class="clock" style="margin:2em;"></div>
+                        <div class="message"></div>
+                        <script type="text/javascript">
+                            var clock;
+
+                            $(document).ready(function() {
+                                // Grab the current date
+                                var currentDate = new Date();
+
+                                // Set some date in the future. In this case, it's always Jan 1
+                                var futureDate  = new Date(2015, 10, 4, 21, 0, 0, 0);
+
+                                // Calculate the difference in seconds between the future and current date
+                                var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+                                var clock;
+                                
+                                clock = $('.clock').FlipClock(diff, {
+                                    clockFace: 'DailyCounter',
+                                    language:'pt',
+                                    autoStart: true,
+                                    callbacks: {
+                                        stop: function() {
+                                            $('.message').html('')
+                                        }
+                                    }
+                                });
+                                
+                                clock.setCountdown(true);
+                                clock.start();
+
+                            });
+                        </script>
+                        </div>
+                        <h1 class="cover-heading">para a <strong>tua</strong> Noite da Medicina.</h1>
                         <p class=lead>Apresentamos-te o maior e mais antigo espectáculo académico organizado por uma Faculdade em Portugal.</p>
                         <p class=lead><a href="sabemais.html" class="btn btn-lg btn-default">Sabe mais &raquo;</a>
                     </div>
@@ -88,9 +141,5 @@
                 </div>
             </div>
         </div>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

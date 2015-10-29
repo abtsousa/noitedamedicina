@@ -8,8 +8,8 @@
   {
     width: 90%;
   }
-    
 }
+
 @media (min-width: 1200px) {
   .masthead,
   .mastfoot,
@@ -20,6 +20,7 @@
 }
 
 .navbar-collapse {clear:both;}
+
 @media (min-width: 768px) {
     .navbar-collapse {clear:none;}
     .redes .container#left {display:inline-block !important;}
@@ -46,7 +47,7 @@ html, body {background-color: #333; background:linear-gradient(rgba(0,0,0,0.3),r
     min-height: 100px;
 }
 .cover h1, .masthead-brand, .redes h3 {font-family:"Open Sans",sans-serif;}
-.cover h1 {font-size:2.8em;font-weight:600;}
+.cover h1 {font-size:2.8em;font-weight:600; margin-top:0;}
 .cover p {font-size:2em;}
 .masthead-nav li a {font-size:1.2em;}
 
@@ -78,3 +79,12 @@ html, body {background-color: #333; background:linear-gradient(rgba(0,0,0,0.3),r
 .redes li a:hover {color:rgba(255,255,255,.75);}
 .redes p {font-size:1em;}
 .btn:hover {background-color:rgba(255,255,255,.75);}
+
+.flipclock {display:none;}
+
+@media (min-width: 720px) {
+    .flipclock {display:inline-flex; left:0; right:0;}
+    .flipclock .flip-clock-label {color:#fff;}
+    #countdown {display:none;}
+}
+    
