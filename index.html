@@ -80,9 +80,9 @@
                         <h1 class="cover-heading">Faltam <div id="countdown"></div></h1>
                         <script type="text/javascript">
                             $("#countdown")
-                            .countdown("2015/11/04 21:00:00", function(event) {
+                            .countdown("2015/11/04 21:00:00",  function(event) {
                             $(this).text(
-                            event.strftime('%D dias, %H horas, %M e %S segundos')
+                            event.strftime('%-D dias, %-H horas, %-M minutos e %-S segundos')
                             );
                             });
                         </script>
