@@ -79,6 +79,7 @@ html, body {background-color: #333; background:linear-gradient(rgba(0,0,0,0.3),r
 .redes li a:hover {color:rgba(255,255,255,.75);}
 .redes p {font-size:1em;}
 .btn-default:hover {background-color:rgba(255,255,255,.75);}
+.btn {white-space: normal;}
 
 .flipclock {display:none;}
 
