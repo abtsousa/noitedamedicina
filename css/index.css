@@ -81,7 +81,7 @@ html, body {font-family:"Source Sans Pro",sans-serif; text-shadow: 2px 2px 3px r
 .redes li a:hover {color:rgba(255,255,255,.75);}
 .redes p {font-size:1em;}
 .btn-default:hover {background-color:rgba(255,255,255,.75);}
-.btn {white-space: normal;}
+.btn {white-space: normal; text-shadow:none;}
 
 .flipclock {display:none;}
 
