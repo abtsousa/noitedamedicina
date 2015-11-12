@@ -31,7 +31,16 @@
 
 .icon-bar {background-color: #ffffff;}
 
-html, body {min-height: 100%; background-color: #333; /*background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../bg/12-a.png");*/ background-size:cover; background-position: center center; background-repeat:no-repeat; background-attachment: fixed; font-family:"Source Sans Pro",sans-serif;} /*text-shadow: 2px 2px 3px rgba(0,0,0,.5);*/
+html, body {background-color: #333; /*background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../bg/12-a.png");*/ background-size:cover; background-position: center center; background-repeat:no-repeat; background-attachment: fixed; font-family:"Source Sans Pro",sans-serif;} /*text-shadow: 2px 2px 3px rgba(0,0,0,.5);*/
+
+/*Bg fix android?*/
+html{
+     height:100%;
+     min-height:100%;
+     }
+body{
+     min-height:100%;
+     }
 
 /*CSS próprio */
 .hide-text, .logo {
